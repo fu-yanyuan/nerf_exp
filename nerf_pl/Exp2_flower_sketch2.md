@@ -46,5 +46,8 @@ python eval.py \
 --img_wh 400 300 --N_importance 64 \
 --ckpt_path ckpts/flower_exp/epoch=29.ckpt
 ``` 
+# download the result
+
+`scp -i .ssh/mtilab-fu.pem -r ubuntu@IP:~/workspace/nerf_pl/results/llff/flower E:\NeRF\results\llff`
 
 
