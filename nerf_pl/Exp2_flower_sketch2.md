@@ -3,8 +3,10 @@ EXP2
 
 ## data 
 original images are /flower from nerf, and generating sketches from https://imagetosketch.com/  
-[colmap](https://gist.github.com/kwea123/f0e8f38ff2aa94495dbfe7ae9219f75c)to prepare camera poses for data  
+[colmap](https://gist.github.com/kwea123/f0e8f38ff2aa94495dbfe7ae9219f75c) to prepare camera poses for data  
 the reason that i use colmap is that i can not follow the steps due to some errors on server. ##[to be done]##  
+### upload data
+`scp -i .ssh/mtilab-fu.pem -r E:\NeRF\flower ubuntu@IP:~/workspace/nerf_pl/data/nerf_llff_data`
 
 ## train 
 # for flower_sketch2
@@ -46,7 +48,7 @@ python eval.py \
 --img_wh 400 300 --N_importance 64 \
 --ckpt_path ckpts/flower_exp/epoch=29.ckpt
 ``` 
-# download the result
+### download the result
 
 `scp -i .ssh/mtilab-fu.pem -r ubuntu@IP:~/workspace/nerf_pl/results/llff/flower E:\NeRF\results\llff`
 
