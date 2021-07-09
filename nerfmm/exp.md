@@ -39,11 +39,14 @@ python tasks/any_folder/train.py \
 
 test  
 ```  
-python tasks/any_folder/train.py \
+python tasks/any_folder/spiral.py \
 --base_dir='data_dir' \
---scene_name='any_folder_demo/flower_sketch'
---
-```
+--scene_name='any_folder_demo/armadillo' \
+--ckpt_dir='logs/any_folder/any_folder_demo/armadillo/lr_0.001_gpu0_seed_17_resize_4_Nsam_128_Ntr_img_-1_freq_10__210709_1547'
+```  
+download results:  
+`scp -i .ssh/XXX.pem -r
+ubuntu@IP:~/workspace/nerfmm/logs/any_folder/any_folder_demo/armadillo/lr_0.001_gpu0_seed_17_resize_4_Nsam_128_Ntr_img_-1_freq_10__210709_1547/render_spiral E:\NeRF\results\armadillo`
 
 
 
