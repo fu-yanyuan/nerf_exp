@@ -1,7 +1,7 @@
 exp1&2
 ---
 
-COLMAP does not work on sketch data. 
+COLMAP does not work on sketch data.  
 Try to use nerfmm to get the result without pre-computed camera parameters
 
 ### EXP1  
