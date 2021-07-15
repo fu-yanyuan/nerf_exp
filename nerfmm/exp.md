@@ -21,7 +21,7 @@ python tasks/any_folder/spiral.py \
 --scene_name='any_folder_demo/flower_sketch' \
 --ckpt_dir='logs/any_folder/any_folder_demo/flower_sketch/lr_0.001_gpu0_seed_17_resize_4_Nsam_128_Ntr_img_-1_freq_10__210701_1514'
 ```  
-##### resut
+##### result
 <p align="center"><img src="results/img.gif?raw=true" alt="Comparison"></p>
 
 ###EXP2  
