@@ -52,4 +52,7 @@ command4 = ['python', 'eval.py',
 subprocess.run(command4)
 ```  
 
+#### result  
+<p align="center"><img src="results/flower_canney.gif?raw=true" alt="Comparison"></p>
+
 
