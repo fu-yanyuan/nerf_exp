@@ -14,15 +14,23 @@ python tasks/any_folder/train.py \
 --scene_name='any_folder_demo/flower_sketch'
 ```  
 
-test
+render novel views
 ```
 python tasks/any_folder/spiral.py \
 --base_dir='data_dir' \
 --scene_name='any_folder_demo/flower_sketch' \
 --ckpt_dir='logs/any_folder/any_folder_demo/flower_sketch/lr_0.001_gpu0_seed_17_resize_4_Nsam_128_Ntr_img_-1_freq_10__210701_1514'
 ```  
-##### result
-<p align="center"><img src="results/img.gif?raw=true" alt="Comparison"></p>
+<p align="center"><img src="results/img.gif?raw=true" alt="Comparison"></p>  
+
+visualize estimated poses in 3D
+```python
+python tasks/any_folder/vis_learned_poses.py \
+--base_dir='data_dir' \
+--scene_name='any_folder_demo/flower_sketch' \
+--ckpt_dir='logs/any_folder/any_folder_demo/flower_sketch/lr_0.001_gpu0_seed_17_resize_4_Nsam_128_Ntr_img_-1_freq_10__210701_1514'
+```
+
 
 ###EXP2  
 data: armadillo(stanford 3D scanning repository)  
@@ -39,7 +47,7 @@ python tasks/any_folder/train.py \
 --scene_name='any_folder_demo/armadillo'
 ```
 
-test  
+render novel views  
 ```  
 python tasks/any_folder/spiral.py \
 --base_dir='data_dir' \
