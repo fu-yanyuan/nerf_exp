@@ -1,6 +1,16 @@
+exp 3 (4 maybe)
+---
+
+### data
+[make_trajectory.py]
+[edge detection](https://github.com/fu-yanyuan/nerf_exp/tree/main/edge_detection)  
+
+### upload
 `scp -i .ssh/mtilab-fu.pem -r E:\opencv\data\bunny_canney ubuntu@13.114.38.153:~/workspace/nerfmm/data_dir/any_folder_demo/`  
 
 `scp -i .ssh/mtilab-fu.pem -r E:\opencv\data\bunny_sobel ubuntu@13.114.38.153:~/workspace/nerfmm/data_dir/any_folder_demo/`  
+
+### train  
 
 ```python
 # exp 2021/08/15 canny and sobel of bunny
@@ -18,6 +28,7 @@ train2_args = [
 subprocess.run(train2_args)
 print("end training 2")
 ```
+### val  
 
 ```python
 python tasks/any_folder/spiral.py \
@@ -30,6 +41,7 @@ python tasks/any_folder/spiral.py \
 --scene_name='any_folder_demo/bunny_sobel' \
 --ckpt_dir='logs/any_folder/any_folder_demo/bunny_sobel/lr_0.001_gpu0_seed_17_resize_1_Nsam_128_Ntr_img_-1_freq_10__210815_0051'
 ```
+### download  
 
 `scp -i .ssh/mtilab-fu.pem -r ubuntu@13.114.38.153:~/workspace/nerfmm/logs/any_folder/any_folder_demo/bunny_canney/lr_0.001_gpu0_seed_17_resize_1_Nsam_128_Ntr_img_-1_freq_10__210814_1803/render_spiral E:/`
 
