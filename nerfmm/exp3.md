@@ -42,6 +42,11 @@ python tasks/any_folder/spiral.py \
 --scene_name='any_folder_demo/bunny_sobel' \
 --ckpt_dir='logs/any_folder/any_folder_demo/bunny_sobel/lr_0.001_gpu0_seed_17_resize_1_Nsam_128_Ntr_img_-1_freq_10__210815_0051'
 ```
+
+```python
+python tasks/any_folder/vis_learned_poses.py --base_dir='data_dir' --scene_name='any_folder_demo/bunny_canney' --ckpt_dir='logs/any_folder/any_folder_demo/bunny_canney/lr_0.001_gpu0_seed_17_resize_1_Nsam_128_Ntr_img_-1_freq_10__210814_1803'
+```
+
 ### download  
 
 `scp -i .ssh/mtilab-fu.pem -r ubuntu@13.114.38.153:~/workspace/nerfmm/logs/any_folder/any_folder_demo/bunny_canney/lr_0.001_gpu0_seed_17_resize_1_Nsam_128_Ntr_img_-1_freq_10__210814_1803/render_spiral E:/`
