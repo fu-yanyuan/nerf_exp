@@ -2,7 +2,8 @@ exp 3 (4 maybe)
 ---
 
 ### data
-[make_trajectory.py]
+[make_trajectory.py]  
+and then  
 [edge detection](https://github.com/fu-yanyuan/nerf_exp/tree/main/edge_detection)  
 
 ### upload
